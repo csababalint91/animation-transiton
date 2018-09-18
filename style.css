@@ -2,10 +2,7 @@ div {
 	height: 100px;
 	width: 100px;
 	background-color: blue;
-	transition-property: width;
-	transition-duration: 2s;
-	transition-timing-function: linear;
-	transition-delay: 1s;
+	transition: width 2s linear 1s; 
 }
 
 div:hover {
