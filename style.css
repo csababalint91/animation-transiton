@@ -7,10 +7,16 @@ div {
 }
 
 @keyframes box {
-	from {
+	0% {
 		background-color: blue;
 	}
-	to {
+	25% {
 		background-color: yellow;
+	}
+	50%{
+		background-color: red;
+	}
+	100%{
+		background-color: green;
 	}
 }
