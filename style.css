@@ -2,9 +2,15 @@ div {
 	height: 100px;
 	width: 100px;
 	background-color: blue;
-	transition: width 2s linear 1s; 
+	animation-name: box;
+	animation-duration: 4s; 
 }
 
-div:hover {
-	width: 300px;
+@keyframes box {
+	from {
+		background-color: blue;
+	}
+	to {
+		background-color: yellow;
+	}
 }
