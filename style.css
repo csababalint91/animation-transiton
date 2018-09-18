@@ -5,6 +5,7 @@ div {
 	background-color: blue;
 	animation-name: box;
 	animation-duration: 4s; 
+	animation-delay: 2s;
 }
 
 @keyframes box {
