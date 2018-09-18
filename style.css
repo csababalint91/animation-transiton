@@ -4,6 +4,7 @@ div {
 	margin-bottom: 5px;
 	background-color: blue;
 	transition: width 2s;
+	transition-delay: 1s;
 }
 
 div:hover {
