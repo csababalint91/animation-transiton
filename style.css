@@ -1,28 +1,27 @@
 div {
 	height: 100px;
 	width: 100px;
+	margin-bottom: 5px;
 	position: relative;
-	background-color: white;
-	animation-name: box;
-	animation-duration: 4s; 
+	background-color: blue;
+	animation-name: mymove;
+	animation-duration: 5s; 
 	animation-iteration-count: infinite;
-	animation-direction: alternate/*reverse,alternate-reverse*/;
+	/*animation:mymove 5s infinite*/
+	
 }
 
-@keyframes box {
-	0% {
-		background-color: white;left: 0px;top: 0;
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+	from {
+		left: 0px;
 	}
-	25% {
-		background-color: yellow;left: 200px;top: 0;
-	}
-	50%{
-		background-color: red;left: 200px;top: 200px;
-	}
-	75%{
-		background-color: blue;left: 0;top: 200px;
-	}
-	100%{
-		background-color: white;left: 0;top: 0;
+	to {
+		left: 300px;
 	}
 }
