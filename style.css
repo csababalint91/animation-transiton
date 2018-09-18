@@ -1,6 +1,7 @@
 div {
 	height: 100px;
 	width: 100px;
+	position: relative;
 	background-color: blue;
 	animation-name: box;
 	animation-duration: 4s; 
@@ -8,15 +9,18 @@ div {
 
 @keyframes box {
 	0% {
-		background-color: blue;
+		background-color: blue;left: 0px;top: 0;
 	}
 	25% {
-		background-color: yellow;
+		background-color: yellow;left: 200px;top: 0;
 	}
 	50%{
-		background-color: red;
+		background-color: red;left: 200px;top: 200px;
+	}
+	75%{
+		background-color: white;left: 0;top: 200px;
 	}
 	100%{
-		background-color: green;
+		background-color: green;left: 0;top: 0;
 	}
 }
