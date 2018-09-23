@@ -1,21 +1,17 @@
 div {
 	height: 100px;
 	width: 100px;
-	margin-bottom: 5px;
-	position: relative;
-	background-color: red;
-	animation-delay: 2s;
-	animation-name: mymove;
-	animation-duration: 4s;
-	animation-fill-mode: backwards;
+	margin-top: 100px;
+	margin-left: 100px;
+	position: absolute;
+	animation: mymove 5s linear 1s infinite alternate; 	
 }
 
 
 @keyframes mymove {
-	from {
-		left: 0px;background-color: blue;
-	}
-	to {
-		left: 300px;background-color: yellow;
-	}
+	0%{left: 0;top:0;background-color: grey}
+	25%{left: 200px;top:0;background-color: green}
+	50%{left: 200px;top:200px;background-color: blue}
+	75%{left: 0;top:200px;background-color: yellow}
+	100%{left: 0;top:0;background-color: white}
 }
